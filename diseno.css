@@ -126,7 +126,7 @@ html {
   width: 70%;
   color: whitesmoke;
   font-family: "Norwester", sans-serif;
-  font-size: 25px;
+  font-size: 3.5vw;
 }
 
 .Contact > a:link {
@@ -179,7 +179,7 @@ i {
 
 button {
   font-family: "Norwester", sans-serif;
-  font-size: 35px;
+  font-size: 5vw;
   text-transform: uppercase;
   border-radius: 10px;
   padding: 10px 25px;
@@ -202,7 +202,7 @@ h2 {
   text-transform: uppercase;
   text-align: left;
   font-family: "Norwester", sans-serif;
-  font-size: 35px;
+  font-size: 6vw;
 }
 
 #img2 {
@@ -264,30 +264,25 @@ td {
 
 }
 
-/*numero del descuento*/
-
-
-/*palabra descuento*/
-
 
 /*terminos y condiciones del descuento */
 .condiciones {
    color: white;
    font-style: oblique;
-   font-size: large;
+   font-size: 2vw;
    text-align: justify;
    margin-left: 2%;
 }
 
 #explicacion {
     color:lightcoral;
-    font-size:30px;
+    font-size:5vw;
 
 }
 
 #titulo{
     color:gold;
-    font-size: 50px;
+    font-size: 9vw;
 }
 
 
@@ -307,7 +302,7 @@ td {
 
 #explicaciondise {
     font-style: italic;
-    font-size:small;
+    font-size:2.5vw;
 }
 
 footer {
@@ -333,11 +328,15 @@ footer {
 
 .numero > h1 {
   color:gold;
-  font-size: 60px;
+  font-size: 10vw;
 
 }
 
 .palabra >  h2 {
   color: white;
-  font-size: 25px;
+  font-size: 5vw;
+}
+
+.social {
+  padding-right: 10%;
 }
