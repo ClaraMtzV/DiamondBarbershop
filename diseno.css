@@ -1,0 +1,343 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+.misDiapositivas {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.contenedor-diapositivas {
+  padding-top: 0%;
+  max-width: 90%;
+  position: relative;
+  margin-left: 3%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 3%;
+  padding: 16px;
+  margin-top: -22px;
+  color: gold; /*flechas*/
+  font-weight: bolder;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: black;
+  box-shadow: none; /*cuadro de las flechas*/
+  text-decoration: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border: 1px solid rgba(116, 116, 116, 0.8);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: gold;
+  border: 1px solid rgba(10, 9, 9, 0.8);
+}
+
+/* Fading animation */
+.desaparecer {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+.bg {
+  background-image: url(backgroundblack.png);
+  /* Full height */
+  height: auto;
+  width: auto;
+  margin: 0;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Info,
+.Contact {
+  position: static;
+  margin-left: 15%;
+  width: 70%;
+  color: whitesmoke;
+  font-family: "Norwester", sans-serif;
+  font-size: 25px;
+}
+
+.Contact > a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.Contact > a:hover {
+  color: rgba(143, 143, 143, 0.736);
+  background-color: transparent;
+  text-decoration: underline black;
+}
+
+.Contact > a:visited {
+  color: gainsboro;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.Contact > a:active {
+  color: aliceblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.Contact {
+  padding-top: 3%;
+}
+#AboutMe {
+  padding-top: 3%;
+  text-align: justify;
+  width: 70%;
+  font-style: italic;
+}
+#img1 {
+  position: static;
+  width: 30%;
+  margin-left: 7%;
+  aspect-ratio: 1/1;
+}
+
+i {
+  font-size: 17px;
+  padding-right: 10px;
+}
+
+.reservar {
+  text-align: center;
+  padding-top: 5%;
+}
+
+button {
+  font-family: "Norwester", sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background-color: rgba(31, 29, 29, 0.918);
+  color: gold;
+  box-shadow: 0 8px 16px 0 rgba(8, 1, 1, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 3px solid gold;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+button:hover {
+  background-color: rgba(143, 143, 143, 0.736);
+  color: black;
+  border: 3px solid black;
+  box-shadow: none;
+}
+h2 {
+  color: gold;
+  text-transform: uppercase;
+  text-align: left;
+  font-family: "Norwester", sans-serif;
+  font-size: 35px;
+}
+
+#img2 {
+  position: absolute;
+  left: 37%;
+  width: 30%;
+  aspect-ratio: 1/1;
+}
+#img3 {
+  position: absolute;
+  left: 67%;
+  width: 30%;
+  aspect-ratio: 1/1;
+}
+.logo {
+  text-align: center;
+  position: static;
+  padding-bottom: 5%;
+}
+td {
+  padding-right: 30px;
+}
+
+
+
+
+
+/*nueva slideshow usando css and js*/
+* {
+  box-sizing: border-box;
+}
+.image-slideshow {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+  background-color: black;
+  height:3%;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*promos.html*/
+
+.descuentos {
+    text-align: center;
+    color:black;
+    font-family: "Norwester", sans-serif;
+
+}
+
+/*numero del descuento*/
+
+
+/*palabra descuento*/
+
+
+/*terminos y condiciones del descuento */
+.condiciones {
+   color: white;
+   font-style: oblique;
+   font-size: large;
+   text-align: justify;
+   margin-left: 2%;
+}
+
+#explicacion {
+    color:lightcoral;
+    font-size:30px;
+
+}
+
+#titulo{
+    color:gold;
+    font-size: 50px;
+}
+
+
+
+#descuento1 {
+    outline-style: dashed;
+    outline-color: gold;
+    outline-width: 5px;
+    outline-offset: 3px;
+    margin-left: 15%;
+    margin-right: 17%;
+    margin-top:5%;
+    margin-bottom: 3%;
+    padding-bottom: 2%;
+    padding-right:5%;
+}
+
+#explicaciondise {
+    font-style: italic;
+    font-size:small;
+}
+
+footer {
+  background-color: rgb(15, 11, 11);
+  padding-top: 5%;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.iconosso {
+  padding-top: 10%;
+  padding-bottom:10%;
+  margin-left: 60%;
+}
+
+.promo div {
+  width: 15%;
+  display: inline-block;
+  padding-left: 0%;
+  padding-right:0%;
+  text-align: right;
+}
+
+.numero > h1 {
+  color:gold;
+  font-size: 60px;
+
+}
+
+.palabra >  h2 {
+  color: white;
+  font-size: 25px;
+}
